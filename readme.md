@@ -30,5 +30,5 @@ Para poder instalar este microservicio será necesario Docker, pues esta aplicac
 ### Guía de uso y postman:
 
 Como este Microservicio ha implementado Oauth para manejo de seguridad, será necesario seguir una serie de pasos antes de tener la posibilidad de realizar una petición HTTP. 
-Por favor, abra el archivo Word llamado "Guía de uso y Postman" para realizar este proceso.
+Por favor, abra el archivo Word llamado "Guía de uso" para realizar este proceso.
 
