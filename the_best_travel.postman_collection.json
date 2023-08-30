@@ -1,0 +1,1227 @@
+{
+	"info": {
+		"_postman_id": "639dd34f-f5d5-432a-95f6-c0ea8ce8b282",
+		"name": "The Best Travel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Anadir Rol",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI1NTJiY2QzMi1jOGY1LTQ0YWUtYmE2MC0xYTYwODQ5ZDllOGIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5Mjg1MjY3OSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyODUyOTc5LCJpYXQiOjE2OTI4NTI2NzksImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjNUMjI6NTE6MTkuMjQ1NzQwNTAwIn0.EDkFZemqit9iMl7CO58BRvJC2RPVt8PeIgUdiEkdxp-jRn6rHOnzmbgr1VY0WgueAEwyeSBGZtJcZw814vHXV1gpS0cYpZqv8zI5bDPJGO1wZau39vJTMaPwNdpQdDkGEQ69jwvcJupM34fsawnK-HWlWvOcNXsWqJ8SFX-odnX1H0FcOIB5wmcjkFDo_0qW8aKKhAKS5nm9aj53W1_m2AJWDLyjcZeumbLeeNyxNzTUovYjmesLQgxd_5B9aKj2y4G-xAoWjEyBDKxCPgamNX_a8vtmCuUs7ZBcLOdn8hqPfOXm-YnX3OxnK3utScKvrvtzDTKo41QKlb6Y9rXJlg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/user/add_role?username=ragnar777&role=write",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"user",
+								"add_role"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "ragnar777"
+								},
+								{
+									"key": "role",
+									"value": "write"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Quitar Rol",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI1NTJiY2QzMi1jOGY1LTQ0YWUtYmE2MC0xYTYwODQ5ZDllOGIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5Mjg1MjY3OSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyODUyOTc5LCJpYXQiOjE2OTI4NTI2NzksImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjNUMjI6NTE6MTkuMjQ1NzQwNTAwIn0.EDkFZemqit9iMl7CO58BRvJC2RPVt8PeIgUdiEkdxp-jRn6rHOnzmbgr1VY0WgueAEwyeSBGZtJcZw814vHXV1gpS0cYpZqv8zI5bDPJGO1wZau39vJTMaPwNdpQdDkGEQ69jwvcJupM34fsawnK-HWlWvOcNXsWqJ8SFX-odnX1H0FcOIB5wmcjkFDo_0qW8aKKhAKS5nm9aj53W1_m2AJWDLyjcZeumbLeeNyxNzTUovYjmesLQgxd_5B9aKj2y4G-xAoWjEyBDKxCPgamNX_a8vtmCuUs7ZBcLOdn8hqPfOXm-YnX3OxnK3utScKvrvtzDTKo41QKlb6Y9rXJlg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/user/remove_role?username=ragnar777&role=write",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"user",
+								"remove_role"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "ragnar777"
+								},
+								{
+									"key": "role",
+									"value": "write"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Token",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "secret",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "client",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic Y2xpZW50OnNlY3JldA=="
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=8F3C03E633204CAA6ED7400E13A8C0D1"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "redirect_uri",
+									"value": "https://oauthdebugger.com/debug",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "jJaPvf9hicPeKHgS3oPiU3IETRoM5atsSZGeDB_K-sKjJUN6UDM5b_fb6GTyOVEHZw6rM0fugcwVGZeIcthcOgC1tXDgPq4HxtMcEz7PitwchZY-o0yV0mycR4ToZHur",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/oauth2/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"item": [
+				{
+					"name": "Get Reservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI0ZTVlODM4Yy0xNDE1LTQ3YTgtOTUxMi1mZGVjOTQ0ZTNlNmIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkxNjcyMywic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTE3MDIzLCJpYXQiOjE2OTI5MTY3MjMsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTY6Mzg6NDMuNDE3NTIwNzAwIn0.Kb93CYHhbPmtJ1UECe62RNdo8mseuu70bUz8PCfhR088I9H_jhgGHu8xKk4-P4-zUbvXNr2Q9Ht6waHoAR8S2g5zQuB_3BQFISblqK45dFbXzVGt3s5hNbQcVu9Phw-Giq2Q5m1xZKZNohnXVvN4qyHvyBvnRaTdjvPYjcL4i_npLaNcAcy5aSQrm2OOQn_F1P4l5mWCO3IeWFH4JUr_zmYbv9538IjQg7iGV3GsxnTqtTiVeqsoPFCFM3beJDXy4YgC7sTZeauJ1NH4iwhG1ZFLVKEKQTPbWow8CBcQgxJOpOETpEuasHX5x0Ar5YApbNUZ8Vg_MmMyesbIR_Ojmw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/reservation/12345678-1234-5678-1234-567812345678",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"reservation",
+								"12345678-1234-5678-1234-567812345678"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Reservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI0ZTVlODM4Yy0xNDE1LTQ3YTgtOTUxMi1mZGVjOTQ0ZTNlNmIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkxNjcyMywic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTE3MDIzLCJpYXQiOjE2OTI5MTY3MjMsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTY6Mzg6NDMuNDE3NTIwNzAwIn0.Kb93CYHhbPmtJ1UECe62RNdo8mseuu70bUz8PCfhR088I9H_jhgGHu8xKk4-P4-zUbvXNr2Q9Ht6waHoAR8S2g5zQuB_3BQFISblqK45dFbXzVGt3s5hNbQcVu9Phw-Giq2Q5m1xZKZNohnXVvN4qyHvyBvnRaTdjvPYjcL4i_npLaNcAcy5aSQrm2OOQn_F1P4l5mWCO3IeWFH4JUr_zmYbv9538IjQg7iGV3GsxnTqtTiVeqsoPFCFM3beJDXy4YgC7sTZeauJ1NH4iwhG1ZFLVKEKQTPbWow8CBcQgxJOpOETpEuasHX5x0Ar5YApbNUZ8Vg_MmMyesbIR_Ojmw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idClient\": \"BBMB771012HMCRR022\",\r\n  \"idHotel\": 2,\r\n  \"totalDays\": 30,\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/reservation/12345678-1234-5678-1234-567812345678",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"reservation",
+								"12345678-1234-5678-1234-567812345678"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Reservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyNzgzNSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI4MTM1LCJpYXQiOjE2OTI5Mjc4MzUsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTk6NDM6NTUuNzE3MDMyNjAwIn0.lQ7tUp9ImlnF75Qo616M8RrYHHkQPYHbMkbykZQI-m7wplR43Po5S8rWOCbZqMOyLFGwJq3wh2lD6iN8JCxa4sg__qFtnwpjx1FckL3k5fqh6jt0MDdvW2mx0pcMYDiOa2vyQ5chmuObnCqwaw7obAGVKcVlY36RPQnwgpkKmxyrh4dsgC1khCdKMOdkM-Em9RapCsWw30UgGh_0p1WzPEpMInFRTwGDNNRGf76T6sQL-jb2BFFbAo3mVvfz95oe4tyv6H4xTjusszQoZfcPdGII9mNAiHbvbumVK1lcTUmkjtW38-Z-gZDhyqOBAOwskXl3W4I3SEvYJIJ4pJWazw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/reservation/12345678-1234-5678-1234-567812345678",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"reservation",
+								"12345678-1234-5678-1234-567812345678"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hotel By Reservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyNzgzNSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI4MTM1LCJpYXQiOjE2OTI5Mjc4MzUsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTk6NDM6NTUuNzE3MDMyNjAwIn0.lQ7tUp9ImlnF75Qo616M8RrYHHkQPYHbMkbykZQI-m7wplR43Po5S8rWOCbZqMOyLFGwJq3wh2lD6iN8JCxa4sg__qFtnwpjx1FckL3k5fqh6jt0MDdvW2mx0pcMYDiOa2vyQ5chmuObnCqwaw7obAGVKcVlY36RPQnwgpkKmxyrh4dsgC1khCdKMOdkM-Em9RapCsWw30UgGh_0p1WzPEpMInFRTwGDNNRGf76T6sQL-jb2BFFbAo3mVvfz95oe4tyv6H4xTjusszQoZfcPdGII9mNAiHbvbumVK1lcTUmkjtW38-Z-gZDhyqOBAOwskXl3W4I3SEvYJIJ4pJWazw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/reservation?hotelId=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"reservation"
+							],
+							"query": [
+								{
+									"key": "hotelId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Reservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyNzgzNSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI4MTM1LCJpYXQiOjE2OTI5Mjc4MzUsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTk6NDM6NTUuNzE3MDMyNjAwIn0.lQ7tUp9ImlnF75Qo616M8RrYHHkQPYHbMkbykZQI-m7wplR43Po5S8rWOCbZqMOyLFGwJq3wh2lD6iN8JCxa4sg__qFtnwpjx1FckL3k5fqh6jt0MDdvW2mx0pcMYDiOa2vyQ5chmuObnCqwaw7obAGVKcVlY36RPQnwgpkKmxyrh4dsgC1khCdKMOdkM-Em9RapCsWw30UgGh_0p1WzPEpMInFRTwGDNNRGf76T6sQL-jb2BFFbAo3mVvfz95oe4tyv6H4xTjusszQoZfcPdGII9mNAiHbvbumVK1lcTUmkjtW38-Z-gZDhyqOBAOwskXl3W4I3SEvYJIJ4pJWazw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idClient\": \"WALA771012HCRGR054\",\r\n  \"idHotel\": 7,\r\n  \"totalDays\": 9,\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/reservation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fly",
+			"item": [
+				{
+					"name": "Vuelos Página",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI0ZTVlODM4Yy0xNDE1LTQ3YTgtOTUxMi1mZGVjOTQ0ZTNlNmIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkxNDQ4MSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTE0NzgxLCJpYXQiOjE2OTI5MTQ0ODEsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTY6MDE6MjEuMTU4Mjc4NjAwIn0.eEJjdmwvMpw87bdTDCbOwQ3bFohk5_W4B48gbc6YRXbHCYdv5gu_rM2sANN3GaubPo-ZacQ8rMkU54VoXhqDGgwVZCt-uuI0oZ0uh0fCHR7wEe6wjAT_MxPtFjUSmwXaQaAlba30sdQ1VGLWM190XRCFSXg-J_T3X7A_GEdQjkuqigzsgDIEQFteoQLbv7dOIYDv4KOtEVmj6V9AGjiB2TeXah_w9SoPAbeMSfLBPsIuI5LVOfc0-OBkP0mJWdWONE6OUd-vvrP5ksh4qEPQpDsEZ2XFZ4cn_jF8mwOsBymysIYGAcs461io8NrTA7rUji1JaHTQHGyL3bAVC51uZQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"idClient\" : \"WALA771012HCRGR054\",\r\n    \"idFly\" : 10,\r\n    \"email\": \"goku@hola.com\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/fly?page=0&size=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"fly"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vuelos Origen Destino",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkzMDExMiwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTMwNDEyLCJpYXQiOjE2OTI5MzAxMTIsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MjE6NTIuODM1NTY1NzAwIn0.H-Ew47jP2N-dHuA_W0Aa7yguMeGUxgNhYE_y-U9yQJrq8ImP1gmD-8Ff-02XpsO94mVdMq2S9Vg28XuKzOmNOAREdPtLskUsGEvSDD9KazIr2YzYKIGNnhEff7FeuvkhSImf0RpF2HUY22LWQHHroH1ZhDjj-aviHIYoiibaZxbMc0KPJbBs6FMTytxQaAVDF22XQ8bpOCzzcbziDZ49PtwOln6YYI85BnSc_NgD7woYwKKaMeP2PcONQ015Q6HFPQkGcWp6_R0wBoYWbrej3TlMKgr6Dul0oAIku3noYMy3pJb84Vvt2kq3QodwmyDJDa7VQCPwumaRwDfpk1jyEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"idClient\" : \"WALA771012HCRGR054\",\r\n    \"idFly\" : 10,\r\n    \"email\": \"goku@hola.com\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/fly/origin_destiny?origin=Mexico&destiny=Grecia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"fly",
+								"origin_destiny"
+							],
+							"query": [
+								{
+									"key": "origin",
+									"value": "Mexico"
+								},
+								{
+									"key": "destiny",
+									"value": "Grecia"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vuelos Mas Barato",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkzMDExMiwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTMwNDEyLCJpYXQiOjE2OTI5MzAxMTIsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MjE6NTIuODM1NTY1NzAwIn0.H-Ew47jP2N-dHuA_W0Aa7yguMeGUxgNhYE_y-U9yQJrq8ImP1gmD-8Ff-02XpsO94mVdMq2S9Vg28XuKzOmNOAREdPtLskUsGEvSDD9KazIr2YzYKIGNnhEff7FeuvkhSImf0RpF2HUY22LWQHHroH1ZhDjj-aviHIYoiibaZxbMc0KPJbBs6FMTytxQaAVDF22XQ8bpOCzzcbziDZ49PtwOln6YYI85BnSc_NgD7woYwKKaMeP2PcONQ015Q6HFPQkGcWp6_R0wBoYWbrej3TlMKgr6Dul0oAIku3noYMy3pJb84Vvt2kq3QodwmyDJDa7VQCPwumaRwDfpk1jyEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"idClient\" : \"WALA771012HCRGR054\",\r\n    \"idFly\" : 10,\r\n    \"email\": \"goku@hola.com\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/fly/less_price?price=15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"fly",
+								"less_price"
+							],
+							"query": [
+								{
+									"key": "price",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vuelos Entre Precios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkzMDExMiwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTMwNDEyLCJpYXQiOjE2OTI5MzAxMTIsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MjE6NTIuODM1NTY1NzAwIn0.H-Ew47jP2N-dHuA_W0Aa7yguMeGUxgNhYE_y-U9yQJrq8ImP1gmD-8Ff-02XpsO94mVdMq2S9Vg28XuKzOmNOAREdPtLskUsGEvSDD9KazIr2YzYKIGNnhEff7FeuvkhSImf0RpF2HUY22LWQHHroH1ZhDjj-aviHIYoiibaZxbMc0KPJbBs6FMTytxQaAVDF22XQ8bpOCzzcbziDZ49PtwOln6YYI85BnSc_NgD7woYwKKaMeP2PcONQ015Q6HFPQkGcWp6_R0wBoYWbrej3TlMKgr6Dul0oAIku3noYMy3pJb84Vvt2kq3QodwmyDJDa7VQCPwumaRwDfpk1jyEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"idClient\" : \"WALA771012HCRGR054\",\r\n    \"idFly\" : 10,\r\n    \"email\": \"goku@hola.com\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/fly/between_price?min=10&max=14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"fly",
+								"between_price"
+							],
+							"query": [
+								{
+									"key": "min",
+									"value": "10"
+								},
+								{
+									"key": "max",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ticket",
+			"item": [
+				{
+					"name": "Crear Ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI0ZTVlODM4Yy0xNDE1LTQ3YTgtOTUxMi1mZGVjOTQ0ZTNlNmIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkxMzUzOCwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTEzODM4LCJpYXQiOjE2OTI5MTM1MzgsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTU6NDU6MzguNTg3NjUwIn0.hN0W9rKcI4AdFdM7ldqDU2d1Yxp60hU0O-HcEmJ65qv54S9qPb7xXfnvEaJzYdPcYFkGCB-Ddv6JeAgJZgx3fKam4hhz4QhHoOijdZKdd9BXlAVnN3dttTcwGQYin9e79RI5vrIQpmXW9AulpQTweJ2rAzeHKGnEPDkEKCSOEZPXwiWLZioWf7DZhqEfXZTsPOYGg8XEITKy1QEoL1BbgWWCjlqn5GM7saZUIwKC4gFB2tnLuptFumttm81J8u9huXiZK_djJ0OFoIvQXsy97L1jIP3-Suxvgh7lihS58LVbm8fxDSFtjBI5K5Zn4U-xMKaCEl2syebPMge5USFDYg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idClient\": \"BBMB771012HMCRR022\",\r\n  \"idFly\": 1,\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/ticket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Precio Vuelo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI0ZTVlODM4Yy0xNDE1LTQ3YTgtOTUxMi1mZGVjOTQ0ZTNlNmIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkxNDQ4MSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTE0NzgxLCJpYXQiOjE2OTI5MTQ0ODEsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTY6MDE6MjEuMTU4Mjc4NjAwIn0.eEJjdmwvMpw87bdTDCbOwQ3bFohk5_W4B48gbc6YRXbHCYdv5gu_rM2sANN3GaubPo-ZacQ8rMkU54VoXhqDGgwVZCt-uuI0oZ0uh0fCHR7wEe6wjAT_MxPtFjUSmwXaQaAlba30sdQ1VGLWM190XRCFSXg-J_T3X7A_GEdQjkuqigzsgDIEQFteoQLbv7dOIYDv4KOtEVmj6V9AGjiB2TeXah_w9SoPAbeMSfLBPsIuI5LVOfc0-OBkP0mJWdWONE6OUd-vvrP5ksh4qEPQpDsEZ2XFZ4cn_jF8mwOsBymysIYGAcs461io8NrTA7rUji1JaHTQHGyL3bAVC51uZQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idClient\": \"BBMB771012HMCRR022\",\r\n  \"idFly\": 10,\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/ticket?flyId= 1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"ticket"
+							],
+							"query": [
+								{
+									"key": "flyId",
+									"value": " 1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ticket",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI0ZTVlODM4Yy0xNDE1LTQ3YTgtOTUxMi1mZGVjOTQ0ZTNlNmIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkxMzUzOCwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTEzODM4LCJpYXQiOjE2OTI5MTM1MzgsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTU6NDU6MzguNTg3NjUwIn0.hN0W9rKcI4AdFdM7ldqDU2d1Yxp60hU0O-HcEmJ65qv54S9qPb7xXfnvEaJzYdPcYFkGCB-Ddv6JeAgJZgx3fKam4hhz4QhHoOijdZKdd9BXlAVnN3dttTcwGQYin9e79RI5vrIQpmXW9AulpQTweJ2rAzeHKGnEPDkEKCSOEZPXwiWLZioWf7DZhqEfXZTsPOYGg8XEITKy1QEoL1BbgWWCjlqn5GM7saZUIwKC4gFB2tnLuptFumttm81J8u9huXiZK_djJ0OFoIvQXsy97L1jIP3-Suxvgh7lihS58LVbm8fxDSFtjBI5K5Zn4U-xMKaCEl2syebPMge5USFDYg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idClient\": \"BBMB771012HMCRR022\",\r\n  \"idFly\": 7,\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/ticket/287c341f-5f52-4d76-a606-5932af9089d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"ticket",
+								"287c341f-5f52-4d76-a606-5932af9089d2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI0ZTVlODM4Yy0xNDE1LTQ3YTgtOTUxMi1mZGVjOTQ0ZTNlNmIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkxNDExNSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTE0NDE1LCJpYXQiOjE2OTI5MTQxMTUsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTU6NTU6MTUuNDE0ODQ4NTAwIn0.OyNXgfBV9tnXnILwNp2h8GOTbzn1lk9YgxM1MQFuXW-wat7UQlQWq5Qu7QdV7S701CMkdLNj2qdn7pO2vSGMHktxAlS4iGOJ-drC6BC_tr2ezqGhy4auZC40g9ga55OidVPy3u63D30oVHlVIXEOuo6Cky8FAr3XO9Bz3i3Gf_7Hub-eSxXUWrWusTKaT1QaP-ZEpMVQZnk7oSCga40nFrtThFxugDd6SWGC_hCm2vrMN9jb8QAD0pA99ZSouX3xsx9VoYnXAb00C6xueulA0gjdXzFEVWU6zVV7VZPWjnMzRfpqmpdouXTvXOFXBYc4d5Vk39dr1cQqDL-TcsICzA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idClient\": \"BBMB771012HMCRR022\",\r\n  \"idFly\": 10,\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/ticket/287c341f-5f52-4d76-a606-5932af9089d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"ticket",
+								"287c341f-5f52-4d76-a606-5932af9089d2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiI0ZTVlODM4Yy0xNDE1LTQ3YTgtOTUxMi1mZGVjOTQ0ZTNlNmIiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkxNDExNSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTE0NDE1LCJpYXQiOjE2OTI5MTQxMTUsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTU6NTU6MTUuNDE0ODQ4NTAwIn0.OyNXgfBV9tnXnILwNp2h8GOTbzn1lk9YgxM1MQFuXW-wat7UQlQWq5Qu7QdV7S701CMkdLNj2qdn7pO2vSGMHktxAlS4iGOJ-drC6BC_tr2ezqGhy4auZC40g9ga55OidVPy3u63D30oVHlVIXEOuo6Cky8FAr3XO9Bz3i3Gf_7Hub-eSxXUWrWusTKaT1QaP-ZEpMVQZnk7oSCga40nFrtThFxugDd6SWGC_hCm2vrMN9jb8QAD0pA99ZSouX3xsx9VoYnXAb00C6xueulA0gjdXzFEVWU6zVV7VZPWjnMzRfpqmpdouXTvXOFXBYc4d5Vk39dr1cQqDL-TcsICzA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/ticket/287c341f-5f52-4d76-a606-5932af9089d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"ticket",
+								"287c341f-5f52-4d76-a606-5932af9089d2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tour",
+			"item": [
+				{
+					"name": "Crear Tour",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyODQ5NCwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI4Nzk0LCJpYXQiOjE2OTI5Mjg0OTQsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTk6NTQ6NTQuOTQ3MjI3MjAwIn0.ibkPBeSIQJ5UNpxRN2rc7H_hZrVtOoczThOlvYPnH9sXO4rfSNlRNJH1NEXr_eSoexD-lttMYzHr9qSWwolTmtIOFlc_xZ2zntfU-DVj8Fcf5fAr4TvfS2p5hvEOC1mQyD7gXQWZFx0C6OeJH_DljB5bEZm5P88PQkZbGWpoiU7M6480E1zToaoQtyvCZ8OuEPLr314UEfQEIBAgiEE4z1GVDU-jTaiy-hwi6ExuiP2dSXeupnvOw0a24bZmh4QCCMUxGHffErFCUVMFjSe6Q0gE0_dWkaA2_moNQcvilrA0j-DaC4mFBciTWx1u895tB0OqwtkfzmwIBMJj9ga39Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": \"BBMB771012HMCRR022\",\r\n  \"flights\": [\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ],\r\n  \"hotels\": [\r\n    {\r\n      \"id\": 7,\r\n      \"totalDays\": 12\r\n    }\r\n  ],\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/tour",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"tour"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tour",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyOTI2Mywic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI5NTYzLCJpYXQiOjE2OTI5MjkyNjMsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MDc6NDMuOTcwMzE3NTAwIn0.Rv_AJdm-6QCIYwrB4QGrreBahMUjW5iygf-k7VJzR_bKQjMLA2eNiEAFnc2bKxfAQ6KVPE5o18g2hmzLHGSOdX_t_Ox2Yn5KPH_CwlDEg7Twdg9PXBNzzBRvQDte6iBpRPnhB6cPVxmcRKdYlkK2mcvuIZUAyeaZgO7szaEMm0pN8KFWim8D_eH1fr20dnullHuKFrKCsJ55PqVV5Ix1eghNZZx6TfxIe6ciED4kVW2MiaKFSHjNaz9MART65TCn8ZlN7J3smZGr1hIhch3WU6zDlO_drq7jT3V9yMOMS3be5ECFz6DEZKRPMMM3tOCDfJRdIe8krA2SXDNzU3V5Nw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": \"BBMB771012HMCRR022\",\r\n  \"flights\": [\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ],\r\n  \"hotels\": [\r\n    {\r\n      \"id\": 7,\r\n      \"totalDays\": 12\r\n    }\r\n  ],\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/tour/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"tour",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Reservation a Tour",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyODg2NSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI5MTY1LCJpYXQiOjE2OTI5Mjg4NjUsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MDE6MDUuMzcwNjEwNDAwIn0.V5Wh1TQnRg9LWvutQe93mYLij07sX99WyzPHEfBtPm_BTJKFrwm3OdmnVsIMfbe--1JqhfnIShqg4asb07_rkXdbYCMe4KPdsyocb2gzQihIuuTF6McLwQKqZEJLRlzaiZe2994wPlGdUrDSEN7ZqK0wGuD3vvZmpd_WMZMbK6dZnDPOrAjjxMn2RQjF1gwBBkMQTVpMKw7QU52BvI5wpjtksXVsQWnN3fxokaaJAp93D-o5gAjkKUuX8MXgvmfgnWUDnTouLxBnDyOuGiAUyKugoLY3ph6MFBWIidr5WN2XVUqfGbXKnNZ6bUx8OPyJuw_gBp1Kn4WFJqrWafAl_Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": \"BBMB771012HMCRR022\",\r\n  \"flights\": [\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ],\r\n  \"hotels\": [\r\n    {\r\n      \"id\": 7,\r\n      \"totalDays\": 12\r\n    }\r\n  ],\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/tour/1/add_reservation/2?totalDays=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"tour",
+								"1",
+								"add_reservation",
+								"2"
+							],
+							"query": [
+								{
+									"key": "totalDays",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Ticket de Tour",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyODQ5NCwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI4Nzk0LCJpYXQiOjE2OTI5Mjg0OTQsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTk6NTQ6NTQuOTQ3MjI3MjAwIn0.ibkPBeSIQJ5UNpxRN2rc7H_hZrVtOoczThOlvYPnH9sXO4rfSNlRNJH1NEXr_eSoexD-lttMYzHr9qSWwolTmtIOFlc_xZ2zntfU-DVj8Fcf5fAr4TvfS2p5hvEOC1mQyD7gXQWZFx0C6OeJH_DljB5bEZm5P88PQkZbGWpoiU7M6480E1zToaoQtyvCZ8OuEPLr314UEfQEIBAgiEE4z1GVDU-jTaiy-hwi6ExuiP2dSXeupnvOw0a24bZmh4QCCMUxGHffErFCUVMFjSe6Q0gE0_dWkaA2_moNQcvilrA0j-DaC4mFBciTWx1u895tB0OqwtkfzmwIBMJj9ga39Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": \"BBMB771012HMCRR022\",\r\n  \"flights\": [\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ],\r\n  \"hotels\": [\r\n    {\r\n      \"id\": 7,\r\n      \"totalDays\": 12\r\n    }\r\n  ],\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/tour/remove_ticket/41d8dde1-1552-4b04-96bf-b608791e8843",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"tour",
+								"remove_ticket",
+								"41d8dde1-1552-4b04-96bf-b608791e8843"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Ticket a Tour",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyODg2NSwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI5MTY1LCJpYXQiOjE2OTI5Mjg4NjUsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MDE6MDUuMzcwNjEwNDAwIn0.V5Wh1TQnRg9LWvutQe93mYLij07sX99WyzPHEfBtPm_BTJKFrwm3OdmnVsIMfbe--1JqhfnIShqg4asb07_rkXdbYCMe4KPdsyocb2gzQihIuuTF6McLwQKqZEJLRlzaiZe2994wPlGdUrDSEN7ZqK0wGuD3vvZmpd_WMZMbK6dZnDPOrAjjxMn2RQjF1gwBBkMQTVpMKw7QU52BvI5wpjtksXVsQWnN3fxokaaJAp93D-o5gAjkKUuX8MXgvmfgnWUDnTouLxBnDyOuGiAUyKugoLY3ph6MFBWIidr5WN2XVUqfGbXKnNZ6bUx8OPyJuw_gBp1Kn4WFJqrWafAl_Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": \"BBMB771012HMCRR022\",\r\n  \"flights\": [\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ],\r\n  \"hotels\": [\r\n    {\r\n      \"id\": 7,\r\n      \"totalDays\": 12\r\n    }\r\n  ],\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/tour/1/add_ticket/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"tour",
+								"1",
+								"add_ticket",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Tour",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyOTI2Mywic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI5NTYzLCJpYXQiOjE2OTI5MjkyNjMsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MDc6NDMuOTcwMzE3NTAwIn0.Rv_AJdm-6QCIYwrB4QGrreBahMUjW5iygf-k7VJzR_bKQjMLA2eNiEAFnc2bKxfAQ6KVPE5o18g2hmzLHGSOdX_t_Ox2Yn5KPH_CwlDEg7Twdg9PXBNzzBRvQDte6iBpRPnhB6cPVxmcRKdYlkK2mcvuIZUAyeaZgO7szaEMm0pN8KFWim8D_eH1fr20dnullHuKFrKCsJ55PqVV5Ix1eghNZZx6TfxIe6ciED4kVW2MiaKFSHjNaz9MART65TCn8ZlN7J3smZGr1hIhch3WU6zDlO_drq7jT3V9yMOMS3be5ECFz6DEZKRPMMM3tOCDfJRdIe8krA2SXDNzU3V5Nw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/tour/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"tour",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Reservation de Tour",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyODQ5NCwic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI4Nzk0LCJpYXQiOjE2OTI5Mjg0OTQsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMTk6NTQ6NTQuOTQ3MjI3MjAwIn0.ibkPBeSIQJ5UNpxRN2rc7H_hZrVtOoczThOlvYPnH9sXO4rfSNlRNJH1NEXr_eSoexD-lttMYzHr9qSWwolTmtIOFlc_xZ2zntfU-DVj8Fcf5fAr4TvfS2p5hvEOC1mQyD7gXQWZFx0C6OeJH_DljB5bEZm5P88PQkZbGWpoiU7M6480E1zToaoQtyvCZ8OuEPLr314UEfQEIBAgiEE4z1GVDU-jTaiy-hwi6ExuiP2dSXeupnvOw0a24bZmh4QCCMUxGHffErFCUVMFjSe6Q0gE0_dWkaA2_moNQcvilrA0j-DaC4mFBciTWx1u895tB0OqwtkfzmwIBMJj9ga39Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerId\": \"BBMB771012HMCRR022\",\r\n  \"flights\": [\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ],\r\n  \"hotels\": [\r\n    {\r\n      \"id\": 7,\r\n      \"totalDays\": 12\r\n    }\r\n  ],\r\n  \"email\": \"theemanuel211@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/best_travel/tour/1/remove_reservation/1c6082b4-b92d-4247-9011-a0f1d6902c00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"tour",
+								"1",
+								"remove_reservation",
+								"1c6082b4-b92d-4247-9011-a0f1d6902c00"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hoteles Paginados",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyOTY3Mywic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI5OTczLCJpYXQiOjE2OTI5Mjk2NzMsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MTQ6MzMuNDI5OTg5NzAwIn0.HHZoc5NMFe0i6Zu3FudcnvNCXRmfnuNagWEBETDm__zovXp1tdaiqGC8Z5PbQIRsA7dwc02jX1GMZLfDFanClawkWvKAd2bUhiLdfgjneK-lhi2ePY_sFwimJ-XxKTZS9M3vgeVfvI7CuYxSvqqe4Nbm5PSA2eHwaWK2tqS4AzQRuGshEkGgyEedv1OBtkYY8-ipn8x-kF8hjgLqexKG5Opio8kd_4mIRuK3NfEkD-DciP10CC0ORWNDYOdUqp1LnSK9t-EbtPe_36w5l16I3Is771LsCLPd6SOxC0JarTdE4sgDNI0ow2v06CZQNvyEyDAruvR6H2Yq0_IUjV4W5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/hotel?page=0&size=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"hotel"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hotel Entre Precios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyOTY3Mywic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI5OTczLCJpYXQiOjE2OTI5Mjk2NzMsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MTQ6MzMuNDI5OTg5NzAwIn0.HHZoc5NMFe0i6Zu3FudcnvNCXRmfnuNagWEBETDm__zovXp1tdaiqGC8Z5PbQIRsA7dwc02jX1GMZLfDFanClawkWvKAd2bUhiLdfgjneK-lhi2ePY_sFwimJ-XxKTZS9M3vgeVfvI7CuYxSvqqe4Nbm5PSA2eHwaWK2tqS4AzQRuGshEkGgyEedv1OBtkYY8-ipn8x-kF8hjgLqexKG5Opio8kd_4mIRuK3NfEkD-DciP10CC0ORWNDYOdUqp1LnSK9t-EbtPe_36w5l16I3Is771LsCLPd6SOxC0JarTdE4sgDNI0ow2v06CZQNvyEyDAruvR6H2Yq0_IUjV4W5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/hotel/between_price?min=10&max=40",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"hotel",
+								"between_price"
+							],
+							"query": [
+								{
+									"key": "min",
+									"value": "10"
+								},
+								{
+									"key": "max",
+									"value": "40"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hotel Más Barato",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyOTY3Mywic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI5OTczLCJpYXQiOjE2OTI5Mjk2NzMsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MTQ6MzMuNDI5OTg5NzAwIn0.HHZoc5NMFe0i6Zu3FudcnvNCXRmfnuNagWEBETDm__zovXp1tdaiqGC8Z5PbQIRsA7dwc02jX1GMZLfDFanClawkWvKAd2bUhiLdfgjneK-lhi2ePY_sFwimJ-XxKTZS9M3vgeVfvI7CuYxSvqqe4Nbm5PSA2eHwaWK2tqS4AzQRuGshEkGgyEedv1OBtkYY8-ipn8x-kF8hjgLqexKG5Opio8kd_4mIRuK3NfEkD-DciP10CC0ORWNDYOdUqp1LnSK9t-EbtPe_36w5l16I3Is771LsCLPd6SOxC0JarTdE4sgDNI0ow2v06CZQNvyEyDAruvR6H2Yq0_IUjV4W5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/hotel/less_price?price=50",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"hotel",
+								"less_price"
+							],
+							"query": [
+								{
+									"key": "price",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hotel By Ranking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJkYjU0MDBkOS0wNTc3LTRhY2UtYWNjNS03NGFlZThiNTJhNjYiLCJhbGciOiJSUzI1NiJ9.eyJvd25lciI6IkRlYnVnZ2VhbmRvIGlkZWFzIiwic3ViIjoibWlzdGVyWCIsImF1ZCI6ImNsaWVudCIsIm5iZiI6MTY5MjkyOTI2Mywic2NvcGUiOlsid3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2Jlc3RfdHJhdmVsIiwiZXhwIjoxNjkyOTI5NTYzLCJpYXQiOjE2OTI5MjkyNjMsImRhdGVfcmVxdWVzdCI6IjIwMjMtMDgtMjRUMjA6MDc6NDMuOTcwMzE3NTAwIn0.Rv_AJdm-6QCIYwrB4QGrreBahMUjW5iygf-k7VJzR_bKQjMLA2eNiEAFnc2bKxfAQ6KVPE5o18g2hmzLHGSOdX_t_Ox2Yn5KPH_CwlDEg7Twdg9PXBNzzBRvQDte6iBpRPnhB6cPVxmcRKdYlkK2mcvuIZUAyeaZgO7szaEMm0pN8KFWim8D_eH1fr20dnullHuKFrKCsJ55PqVV5Ix1eghNZZx6TfxIe6ciED4kVW2MiaKFSHjNaz9MART65TCn8ZlN7J3smZGr1hIhch3WU6zDlO_drq7jT3V9yMOMS3be5ECFz6DEZKRPMMM3tOCDfJRdIe8krA2SXDNzU3V5Nw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/best_travel/hotel?page=0&size=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"best_travel",
+								"hotel"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
