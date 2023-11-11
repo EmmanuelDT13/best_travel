@@ -21,9 +21,9 @@ Para poder instalar este microservicio será necesario Docker, pues esta aplicac
 
 1.- Instalación mediante docker-compose: 
 
-- Abra una terminal en el presente directorio
+- Después de haber clonado el repositorio en su máquina local, abra una terminal en el presente directorio.
 
-- Ejecute el comando "docker compose up"
+- Ejecute el comando "docker compose up".
 
 - Espere alrededor de 3 minutos para que la aplicación y todas sus dependencias inicien.
 
