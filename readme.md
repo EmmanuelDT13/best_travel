@@ -10,7 +10,7 @@ Además, el usuario tiene la posibilidad de crear ticekts para comprar un vuelo,
 El microservicio The Best Travel se desarrolló utilizando las siguientes tecnologías:
 
 - **Java 17:** Lenguaje de programación en el que se creó esta aplicación.
-- **Spring 3.0.5:** Framework de desarrollo de aplicaciones Java, se han tomando en cuenta módulos como Spring core, Spring Boot, Spring data JPA, Spring Cloud para configuraciones en la nube, Spring Security para gestionar permisos de acceso.
+- **Spring 3.0.5:** Framework de desarrollo de aplicaciones Java, se han tomando en cuenta herramientas y módulos como Spring core, Spring Boot, Spring data JPA, Spring Cloud para configuraciones en la nube, Spring Security para gestionar permisos de acceso.
 - **PostgreSQL:** Motor de bases de datos relacionales.
 - **MongoDB:** Base de datos NoSQL para almacenar información de los usuarios.
 - **Docker:** Tecnología empleada para crear imágenes tanto de bases de datos como del proyecto en sí.
